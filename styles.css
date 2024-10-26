@@ -95,26 +95,10 @@ body {
     margin: 20px 0 10px;
 }
 
-/* Footer and Back Button */
+/* Footer */
 footer {
     margin-top: 50px;
     color: #666;
-}
-
-.back-button {
-    background-color: #00bfff;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-    background-color: #008cba;
 }
 
 footer a {
