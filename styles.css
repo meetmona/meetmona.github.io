@@ -81,17 +81,21 @@ body {
     text-align: center;
 }
 
-/* Introductory Text Styling */
+/* Single-Line Introductory Text Styling */
 .intro-text {
     font-size: 1.5em;
     color: #ddd;
-    max-width: 700px;
-    margin: 0 auto 60px;
-    line-height: 1.6;
+    max-width: 1000px;
+    margin: 20px auto 60px;
+    line-height: 1.3;
     font-family: 'Georgia', serif;
-    font-style: italic;
+    font-weight: 600;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(45deg, #00bfff, #004d80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
 }
 
 /* Archetypes Title Styling with Extra Spacing */
@@ -179,5 +183,9 @@ footer a {
 }
 
 footer a:hover {
-    color: #008cba;
-}
+   With the revised CSS, the introductory text is now a stylish, single-line format with a gradient effect. The text uses a gradient from light blue to dark blue, clipped to the text for a polished effect.
+
+### Summary of Key Changes
+
+- **Gradient Text Effect for Introductory Text**: The `intro-text` now uses a background gradient and text clipping for a modern, sleek look.
+- **Visibility and Spacing Adjustments**: The introductory line is clearly spaced and visible to improve readability and aesthetics.
