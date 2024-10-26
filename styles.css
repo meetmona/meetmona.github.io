@@ -76,13 +76,20 @@ body {
     text-align: center;
 }
 
+/* Archetypes Title Styling */
+.archetypes-title {
+    font-size: 2.5em;
+    color: #00bfff;
+    margin-bottom: 20px;
+}
+
 /* Archetype Section Styling */
 #features {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .archetype-icon {
