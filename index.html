@@ -42,9 +42,8 @@
             </div>
         </section>
 
-        <!-- Footer Section with Back Button -->
+        <!-- Footer Section -->
         <footer>
-            <button class="back-button" onclick="goBack()">Back</button>
             <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a></p>
         </footer>
     </div>
@@ -57,15 +56,6 @@
                 document.querySelector(".landing").style.display = "none";
                 document.getElementById("main-content").style.display = "block";
                 document.getElementById("main-content").classList.add("fade-in");
-            }, 600);  // Adjust timing to match CSS transition
-        }
-
-        function goBack() {
-            document.getElementById("main-content").classList.add("fade-out");
-            setTimeout(() => {
-                document.getElementById("main-content").style.display = "none";
-                document.querySelector(".landing").style.display = "flex";
-                document.querySelector(".landing").classList.add("fade-in");
             }, 600);  // Adjust timing to match CSS transition
         }
     </script>
