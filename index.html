@@ -7,18 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Landing Page -->
+    <div class="landing">
+        <h1 class="main-title">Mona</h1>
+        <button class="enter-button" onclick="enterSite()">Enter</button>
+    </div>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Mona LLM</h1>
-        <p>Archetype-Driven AI Insights</p>
-        <a href="MonaLLM_Whitepaper.pdf" class="button">Download Whitepaper</a>
-    </header>
+    <!-- Main Content Section -->
+    <div id="main-content" class="content hidden">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Mona LLM</h2>
+            <p>Mona LLM is an advanced language model designed to deliver personalized insights based on unique archetypes.</p>
+        </section>
 
-    <!-- About Mona Section -->
-    <section id="about">
-        <h2>About Mona LLM</h2>
-        <p>Mona LLM is an advanced language model designed to deliver personalized insights based on unique archetypes. Mona’s responses adapt to user-selected archetypes, offering a new level of depth and personalization in AI interactions.</p>
-    </section>
+        <!-- Archetype Section -->
+        <section id="features">
+            <h2>Archetypes</h2>
+            <div class="feature">
+                <h3>Sage</h3>
+                <p>Wisdom-driven insights offering depth and perspective.</p>
+            </div>
+            <div class="feature">
+                <h3>Trickster</h3>
+                <p>Playful and curious, revealing the unexpected.</p>
+            </div>
+            <div class="feature">
+                <h3>Dreamer</h3>
+                <p>Inspirational and hopeful, seeing possibilities ahead.</p>
+            </div>
+            <div class="feature">
+                <h3>Visionary</h3>
+                <p>Strategic and focused, offering high-level guidance.</p>
+            </div>
+        </section>
 
-    <!-- Features 
+        <!-- Footer Section -->
+        <footer>
+            <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function enterSite() {
+            document.querySelector(".landing").classList.add("hidden");
+            document.getElementById("main-content").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
