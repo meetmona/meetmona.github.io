@@ -16,15 +16,39 @@ body {
     overflow: hidden;
 }
 
-/* Transitions */
-.fade-out {
-    opacity: 0;
-    transition: opacity 0.6s ease;
+/* Portal Transition Effect */
+.portal-transition {
+    animation: portalZoomOut 1s forwards;
 }
 
+@keyframes portalZoomOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+}
+
+/* Fade-In Effect for Main Content */
 .fade-in {
-    opacity: 1;
-    transition: opacity 0.6s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Landing Page */
@@ -37,7 +61,6 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #000;
-    opacity: 1;
     transition: opacity 0.6s ease;
 }
 
@@ -80,108 +103,4 @@ body {
     padding: 40px;
     text-align: center;
     font-family: 'Georgia', serif; /* Font for the second page */
-}
-
-/* Smaller Single-Line Introductory Text Styling */
-.intro-text {
-    font-size: 1em; /* Smaller font size */
-    color: #ddd;
-    max-width: 1200px;
-    margin: 20px auto 40px;
-    font-family: 'Georgia', serif;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 0.5px;
-    background: linear-gradient(45deg, #00bfff, #004d80);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
-}
-
-/* Archetypes Title Styling */
-.archetypes-title {
-    font-size: 3em;
-    color: #00bfff;
-    margin-top: 40px;
-    margin-bottom: 30px; /* Reduced margin for tighter spacing */
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
-}
-
-/* Archetype Section Styling */
-#features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centered the items */
-    gap: 15px; /* Reduced gap for closer alignment */
-    margin-top: 20px;
-}
-
-.archetype-icon {
-    width: 100px;
-    height: 100px;
-    margin-top: 15px;
-}
-
-/* Updated Font for Individual Archetype Titles */
-.archetype-title {
-    font-size: 1.6em;
-    color: #00bfff;
-    margin-bottom: 8px;
-    font-family: 'Roboto Slab', serif; /* Sleek and modern font */
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.feature {
-    background-color: #222;
-    border-radius: 15px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    margin-bottom: 15px;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-}
-
-.feature p {
-    font-size: 1em;
-    color: #ccc;
-}
-
-/* Locked Button Styling */
-.locked-button {
-    background-color: #333;
-    color: #00bfff;
-    padding: 8px 20px;
-    font-size: 0.9em;
-    border: 1px dashed #00bfff;
-    border-radius: 15px;
-    margin-top: 15px;
-    cursor: not-allowed;
-    opacity: 0.8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    color: #666;
-}
-
-footer a {
-    color: #00bfff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #008cba;
 }
