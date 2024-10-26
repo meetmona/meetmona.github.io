@@ -86,9 +86,9 @@ body {
 }
 
 .archetype-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
 }
 
 .feature {
@@ -97,16 +97,42 @@ body {
     padding: 20px;
     width: 220px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-#about h2, #features h2, .feature h3 {
-    font-size: 2em;
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature h3 {
+    font-size: 1.8em;
     color: #00bfff;
+    margin-bottom: 10px;
+}
+
+#about h2, #features h2 {
+    font-size: 2.5em;
+    color: #00bfff;
+    margin-bottom: 20px;
 }
 
 #about p, .feature p {
     font-size: 1.1em;
     color: #ccc;
+}
+
+/* Locked Button Styling */
+.locked-button {
+    background-color: #555;
+    color: #bbb;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    cursor: not-allowed;
+    opacity: 0.7;
 }
 
 /* Footer */
