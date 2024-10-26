@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mona LLM</title>
+    <title>Mona AI</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Landing Page with Centered Title and Enter Button -->
     <div class="landing">
-        <h1 class="main-title">Mona</h1>
+        <h1 class="main-title">Mona AI</h1>
         <button class="enter-button" onclick="enterSite()">Enter</button>
     </div>
 
@@ -17,26 +17,30 @@
     <div id="main-content" class="content hidden">
         <!-- About Section -->
         <section id="about">
-            <h2>About Mona LLM</h2>
-            <p>Mona LLM is an advanced language model designed to deliver personalized insights based on unique archetypes.</p>
+            <h2>About Mona AI</h2>
+            <p>Mona AI is an advanced language model designed to deliver personalized insights based on unique archetypes.</p>
         </section>
 
-        <!-- Archetype Section -->
+        <!-- Archetype Section with Icons and Descriptions -->
         <section id="features">
             <h2>Archetypes</h2>
             <div class="feature">
+                <img src="sage_icon.png" alt="Sage Icon" class="archetype-icon">
                 <h3>Sage</h3>
                 <p>Wisdom-driven insights offering depth and perspective.</p>
             </div>
             <div class="feature">
+                <img src="trickster_icon.png" alt="Trickster Icon" class="archetype-icon">
                 <h3>Trickster</h3>
                 <p>Playful and curious, revealing the unexpected.</p>
             </div>
             <div class="feature">
+                <img src="dreamer_icon.png" alt="Dreamer Icon" class="archetype-icon">
                 <h3>Dreamer</h3>
                 <p>Inspirational and hopeful, seeing possibilities ahead.</p>
             </div>
             <div class="feature">
+                <img src="visionary_icon.png" alt="Visionary Icon" class="archetype-icon">
                 <h3>Visionary</h3>
                 <p>Strategic and focused, offering high-level guidance.</p>
             </div>
@@ -48,7 +52,7 @@
         </footer>
     </div>
 
-    <!-- JavaScript to Show Main Content with Transition -->
+    <!-- JavaScript to Show Main Content with Fade Transition -->
     <script>
         function enterSite() {
             document.querySelector(".landing").classList.add("fade-out");
