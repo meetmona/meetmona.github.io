@@ -115,7 +115,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centered the items */
-    gap: 20px; /* Reduced gap between archetypes */
+    gap: 15px; /* Reduced gap for closer alignment */
     margin-top: 20px;
 }
 
@@ -127,10 +127,10 @@ body {
 
 /* Updated Font for Individual Archetype Titles */
 .archetype-title {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #00bfff;
-    margin-bottom: 10px;
-    font-family: 'Playfair Display', serif; /* New stylish font */
+    margin-bottom: 8px;
+    font-family: 'Roboto Slab', serif; /* Sleek and modern font */
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -139,11 +139,11 @@ body {
     background-color: #222;
     border-radius: 15px;
     padding: 20px;
-    width: 220px;
+    width: 200px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .feature:hover {
@@ -151,7 +151,7 @@ body {
 }
 
 .feature p {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #ccc;
 }
 
@@ -159,7 +159,7 @@ body {
 .locked-button {
     background-color: #333;
     color: #00bfff;
-    padding: 10px 20px;
+    padding: 8px 20px;
     font-size: 0.9em;
     border: 1px dashed #00bfff;
     border-radius: 15px;
