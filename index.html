@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Landing Page -->
+    <!-- Landing Page with Enter Button -->
     <div class="landing">
         <h1 class="main-title">Mona</h1>
         <button class="enter-button" onclick="enterSite()">Enter</button>
     </div>
 
-    <!-- Main Content Section -->
+    <!-- Main Content Section, Initially Hidden -->
     <div id="main-content" class="content hidden">
         <!-- About Section -->
         <section id="about">
@@ -48,6 +48,7 @@
         </footer>
     </div>
 
+    <!-- JavaScript to Show Main Content -->
     <script>
         function enterSite() {
             document.querySelector(".landing").classList.add("hidden");
