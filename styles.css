@@ -79,7 +79,7 @@ body {
 #main-content {
     padding: 40px;
     text-align: center;
-    font-family: 'Georgia', serif; /* New font for the second page */
+    font-family: 'Georgia', serif; /* Font for the second page */
 }
 
 /* Smaller Single-Line Introductory Text Styling */
@@ -98,12 +98,12 @@ body {
     text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
 }
 
-/* Archetypes Title Styling with Extra Spacing */
+/* Archetypes Title Styling */
 .archetypes-title {
     font-size: 3em;
     color: #00bfff;
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px; /* Reduced margin for tighter spacing */
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -114,8 +114,8 @@ body {
 #features {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 40px;
+    justify-content: center; /* Centered the items */
+    gap: 20px; /* Reduced gap between archetypes */
     margin-top: 20px;
 }
 
@@ -125,12 +125,12 @@ body {
     margin-top: 15px;
 }
 
-/* Individual Archetype Titles */
+/* Updated Font for Individual Archetype Titles */
 .archetype-title {
     font-size: 1.8em;
     color: #00bfff;
     margin-bottom: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Playfair Display', serif; /* New stylish font */
     font-weight: bold;
     letter-spacing: 1px;
 }
