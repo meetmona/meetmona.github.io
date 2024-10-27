@@ -16,27 +16,6 @@ body {
     overflow: hidden;
 }
 
-/* Fade-in effect */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
-    margin-bottom: 20px;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Mona Image Styling */
-.mona-image {
-    max-width: 300px; /* Adjust size as needed */
-    margin: 0 auto;
-    display: block;
-    padding-top: 20px;
-}
-
 /* Portal Transition Effect */
 .portal-transition {
     animation: portalZoomOut 1s forwards;
@@ -54,6 +33,19 @@ body {
     100% {
         opacity: 0;
         transform: scale(1.3);
+    }
+}
+
+/* Fade-in Effect for Elements */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
 
@@ -122,18 +114,35 @@ body {
     text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
 }
 
-/* Footer Styling */
-footer {
+/* Hidden Elements */
+.hidden-elements, .hidden {
+    display: none;
+}
+
+/* Archetype Section */
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     margin-top: 40px;
 }
 
-footer a {
-    color: #00c3ff;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Merriweather', serif;
+.archetype-icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
 }
 
-footer a:hover {
-    color: #00a3cc;
+.archetype-title, .archetype-description {
+    font-size: 1.5em;
+    color: #00c3ff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
+
+.feature {
+    background-color: #222;
+    border-radius: 15px;
+    padding: 20This update should ensure that both the archetypes and footer sections fade in simultaneously after the typing animation is complete. Let me know if this configuration now fully matches your expectations, or if additional tweaks are needed!
