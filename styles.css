@@ -16,27 +16,6 @@ body {
     overflow: hidden;
 }
 
-/* Fade-in effect */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
-    margin-bottom: 20px;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Mona Image Styling */
-.mona-image {
-    max-width: 300px; /* Adjust size as needed */
-    margin: 0 auto;
-    display: block;
-    padding-top: 20px;
-}
-
 /* Portal Transition Effect */
 .portal-transition {
     animation: portalZoomOut 1s forwards;
