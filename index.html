@@ -27,31 +27,31 @@
                 <h3 class="archetype-title">Sage</h3>
                 <img src="assets/sage_icon.png" alt="Sage Icon" class="archetype-icon">
                 <p>Wisdom-driven insights offering depth and perspective.</p>
-                <button class="locked-button">Unlock your Archetype... (Coming Soon)</button>
+                <button class="locked-button" disabled>Unlock your Archetype... (Coming Soon)</button>
             </div>
             <div class="feature">
                 <h3 class="archetype-title">Trickster</h3>
                 <img src="assets/trickster_icon.png" alt="Trickster Icon" class="archetype-icon">
                 <p>Playful and curious, revealing the unexpected.</p>
-                <button class="locked-button">Unlock your Archetype... (Coming Soon)</button>
+                <button class="locked-button" disabled>Unlock your Archetype... (Coming Soon)</button>
             </div>
             <div class="feature">
                 <h3 class="archetype-title">Dreamer</h3>
                 <img src="assets/dreamer_icon.png" alt="Dreamer Icon" class="archetype-icon">
                 <p>Inspirational and hopeful, seeing possibilities ahead.</p>
-                <button class="locked-button">Unlock your Archetype... (Coming Soon)</button>
+                <button class="locked-button" disabled>Unlock your Archetype... (Coming Soon)</button>
             </div>
             <div class="feature">
                 <h3 class="archetype-title">Visionary</h3>
                 <img src="assets/visionary_icon.png" alt="Visionary Icon" class="archetype-icon">
                 <p>Strategic and focused, offering high-level guidance.</p>
-                <button class="locked-button">Unlock your Archetype... (Coming Soon)</button>
+                <button class="locked-button" disabled>Unlock your Archetype... (Coming Soon)</button>
             </div>
         </section>
         
-        <!-- Footer Section with Whitepaper Link Only -->
+        <!-- Footer Section with Styled "Read the Whitepaper" Link -->
         <footer>
-            <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a> | <a href="assets/Mona_LLM_Whitepaper.pdf" target="_blank">Whitepaper</a></p>
+            <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a> | Read the <a href="assets/Mona_LLM_Whitepaper.pdf" target="_blank">Whitepaper</a></p>
         </footer>
     </div>
 
@@ -59,7 +59,7 @@
     <script>
         function enterSite() {
             const landing = document.querySelector(".landing");
-            landing.classList.add("portal-transition"); // Trigger portal effect
+            landing.classList.add("portal-transition");
             setTimeout(() => {
                 landing.style.display = "none";
                 document.getElementById("main-content").style.display = "block";
