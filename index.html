@@ -18,10 +18,8 @@
         <section id="about">
             <!-- Typing Text Container -->
             <p id="typing-text" class="typing-text"></p>
-            <!-- Hidden Archetypes Title -->
-            <h2 class="archetypes-title hidden-elements">Archetypes</h2>
         </section>
-        
+
         <!-- Archetype Section with Icons and Descriptions (Initially Hidden) -->
         <section id="features" class="hidden-elements">
             <div class="feature">
@@ -58,38 +56,33 @@
 
     <!-- JavaScript for Typing Animation and Transition Effect -->
     <script>
-    function enterSite() {
-        const landing = document.querySelector(".landing");
-        landing.classList.add("portal-transition");
-        setTimeout(() => {
-            landing.style.display = "none";
-            document.getElementById("main-content").style.display = "block";
+        function enterSite() {
+            document.querySelector(".landing").style.display = "none";
+            document.getElementById("main-content").classList.remove("hidden");
             startTyping();
-        }, 1000); // Adjust timing to match CSS animation
-    }
-
-    // Typing Animation Script
-    const text = "Mona AI is an advanced language model crafted for delivering personalized insights. By adapting to unique archetypes, Mona offers users guidance that aligns with their distinct goals, perspectives, and aspirations.";
-    let index = 0;
-
-    function startTyping() {
-        const typingTextElement = document.getElementById("typing-text");
-        const speed = 50;
-
-        function typeWriter() {
-            if (index < text.length) {
-                typingTextElement.innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeWriter, speed);
-            } else {
-                // Show hidden elements after typing completes
-                document.querySelectorAll(".hidden-elements").forEach(el => el.style.display = "block");
-            }
         }
 
-        typeWriter();
-    }
-</script>
+        // Typing Animation Script
+        const text = "Mona AI is an advanced language model crafted for delivering personalized insights. By adapting to unique archetypes, Mona offers users guidance that aligns with their distinct goals, perspectives, and aspirations.";
+        let index = 0;
 
+        function startTyping() {
+            const typingTextElement = document.getElementById("typing-text");
+            const speed = 50;
+
+            function typeWriter() {
+                if (index < text.length) {
+                    typingTextElement.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    // Show hidden elements after typing completes
+                    document.querySelectorAll(".hidden-elements").forEach(el => el.style.display = "block");
+                }
+            }
+
+            typeWriter();
+        }
+    </script>
 </body>
 </html>
