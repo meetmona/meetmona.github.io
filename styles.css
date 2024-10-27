@@ -178,6 +178,21 @@ body {
     color: #000;
 }
 
+.hidden-elements, .hidden {
+    display: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInEffect 2s forwards;
+}
+
+@keyframes fadeInEffect {
+    to {
+        opacity: 1;
+    }
+}
+
 /* Footer */
 footer a {
     color: #00c3ff;
