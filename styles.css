@@ -197,9 +197,14 @@ body {
     }
 }
 
+.countdown {
+    font-weight: bold;
+    color: #00bfff;
+}
+
 /* Footer Position Adjustment */
 footer {
-    margin-top: 30px; /* Adjusts footer position */
+    margin-top: 10px; /* Adjusts footer position */
 }
 
 footer a {
