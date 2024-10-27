@@ -90,6 +90,16 @@
 
             typeWriter();
         }
+
+        document.addEventListener("mousemove", function(e) {
+        const text = document.querySelector(".typing-text");
+        const rect = text.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        text.style.setProperty("--x", `${x}px`);
+        text.style.setProperty("--y", `${y}px`);
+        });
+</script>
     </script>
 </body>
 </html>
