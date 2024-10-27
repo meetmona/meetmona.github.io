@@ -18,6 +18,7 @@
         <section id="about">
             <!-- Typing Text Container -->
             <p id="typing-text" class="typing-text"></p>
+            <!-- Hidden Archetypes Title -->
             <h2 class="archetypes-title hidden-elements">Archetypes</h2>
         </section>
         
@@ -49,7 +50,7 @@
             </div>
         </section>
         
-        <!-- Footer Section with "Read the Whitepaper" Link -->
+        <!-- Footer Section with "Read the Whitepaper" Link (Initially Hidden) -->
         <footer class="hidden-elements">
             <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a> | Read the <a href="assets/Mona_LLM_Whitepaper.pdf" target="_blank">Whitepaper</a></p>
         </footer>
@@ -59,7 +60,7 @@
     <script>
         function enterSite() {
             const landing = document.querySelector(".landing");
-            landing.classList.add("portal-transition"); 
+            landing.classList.add("portal-transition");
             setTimeout(() => {
                 landing.style.display = "none";
                 document.getElementById("main-content").style.display = "block";
@@ -68,7 +69,7 @@
         }
 
         // Typing Animation Script
-        const text = "Mona AI is an advanced language model that goes beyond conventional responses. It offers personalized insights, using a system of unique archetypes that adapt to individual needs, preferences, and aspirations. Each archetype represents a distinct lens through which Mona AI tailors its guidance—allowing users to explore their perspectives, spark creativity, and gain strategic clarity in a way that feels intuitively aligned with who they are.";
+        const text = "Mona AI is an advanced language model crafted for delivering personalized insights. By adapting to unique archetypes, Mona offers users guidance that aligns with their distinct goals, perspectives, and aspirations.";
         let index = 0;
 
         function startTyping() {
