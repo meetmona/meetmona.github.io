@@ -58,37 +58,38 @@
 
     <!-- JavaScript for Typing Animation and Transition Effect -->
     <script>
-        function enterSite() {
-            const landing = document.querySelector(".landing");
-            landing.classList.add("portal-transition");
-            setTimeout(() => {
-                landing.style.display = "none";
-                document.getElementById("main-content").style.display = "block";
-                startTyping();
-            }, 1000);
-        }
+    function enterSite() {
+        const landing = document.querySelector(".landing");
+        landing.classList.add("portal-transition");
+        setTimeout(() => {
+            landing.style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+            startTyping();
+        }, 1000); // Adjust timing to match CSS animation
+    }
 
-        // Typing Animation Script
-        const text = "Mona AI is an advanced language model crafted for delivering personalized insights. By adapting to unique archetypes, Mona offers users guidance that aligns with their distinct goals, perspectives, and aspirations.";
-        let index = 0;
+    // Typing Animation Script
+    const text = "Mona AI is an advanced language model crafted for delivering personalized insights. By adapting to unique archetypes, Mona offers users guidance that aligns with their distinct goals, perspectives, and aspirations.";
+    let index = 0;
 
-        function startTyping() {
-            const typingTextElement = document.getElementById("typing-text");
-            const speed = 50;
+    function startTyping() {
+        const typingTextElement = document.getElementById("typing-text");
+        const speed = 50;
 
-            function typeWriter() {
-                if (index < text.length) {
-                    typingTextElement.innerHTML += text.charAt(index);
-                    index++;
-                    setTimeout(typeWriter, speed);
-                } else {
-                    // Show hidden elements after typing completes
-                    document.querySelectorAll(".hidden-elements").forEach(el => el.classList.remove("hidden-elements"));
-                }
+        function typeWriter() {
+            if (index < text.length) {
+                typingTextElement.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            } else {
+                // Show hidden elements after typing completes
+                document.querySelectorAll(".hidden-elements").forEach(el => el.style.display = "block");
             }
-
-            typeWriter();
         }
-    </script>
+
+        typeWriter();
+    }
+</script>
+
 </body>
 </html>
