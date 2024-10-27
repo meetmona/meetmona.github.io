@@ -166,7 +166,6 @@ body {
     border-radius: 20px;
     margin-top: 15px;
     cursor: not-allowed;
-    text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 3px 6px rgba(0, 191, 255, 0.3);
     transition: background 0.3s ease, color 0.3s ease;
@@ -176,7 +175,6 @@ body {
     background-color: #00bfff;
     color: #000;
 }
-
 .hidden-elements, .hidden {
     display: none;
 }
@@ -192,7 +190,11 @@ body {
     }
 }
 
-/* Footer */
+/* Footer Position Adjustment */
+footer {
+    margin-top: 80px; /* Adjusts footer position */
+}
+
 footer a {
     color: #00c3ff;
     text-decoration: none;
@@ -203,3 +205,4 @@ footer a {
 footer a:hover {
     color: #00a3cc;
 }
+
