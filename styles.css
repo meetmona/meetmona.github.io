@@ -145,5 +145,45 @@ body {
 .feature {
     background-color: #222;
     border-radius: 15px;
-    padding: 20;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.locked-button {
+    background-color: #333;
+    color: #00bfff;
+    padding: 8px 20px;
+    font-size: 0.9em;
+    border: 1px dashed #00bfff;
+    border-radius: 15px;
+    margin-top: 15px;
+    cursor: not-allowed;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.locked-button:hover {
+    content: "🔒";
+    color: #00a3cc;
+    text-decoration: none;
+}
+
+/* Footer */
+footer a {
+    color: #00c3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #00a3cc;
 }
