@@ -131,7 +131,7 @@ body {
     font-size: 1.4em;
     color: #00e6e6;
     font-family: "Jersey 15", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     margin-top: 10px;
 }
 
@@ -199,7 +199,7 @@ body {
 
 /* Footer Position Adjustment */
 footer {
-    margin-top: 60px; /* Adjusts footer position */
+    margin-top: 30px; /* Adjusts footer position */
 }
 
 footer a {
