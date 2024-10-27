@@ -61,7 +61,6 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #000;
-    transition: opacity 0.6s ease;
 }
 
 .main-title {
@@ -102,5 +101,20 @@ body {
 #main-content {
     padding: 40px;
     text-align: center;
-    font-family: 'Georgia', serif; /* Font for the second page */
+    font-family: 'Georgia', serif;
+}
+
+/* Footer Styling */
+footer p {
+    color: #666;
+}
+
+footer a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #008cba;
 }
