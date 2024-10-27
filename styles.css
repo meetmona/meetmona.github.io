@@ -85,6 +85,7 @@ body {
 }
 
 /* Typing Text Style */
+/* Introductory Text with Hover Gradient Animation */
 .typing-text {
     font-size: 1.2em;
     max-width: 800px;
@@ -97,14 +98,13 @@ body {
     background: linear-gradient(45deg, #00bfff, #004d80);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
     transition: background 0.5s ease;
 }
 
 .typing-text:hover {
     background: linear-gradient(90deg, #00ffb0, #00bfff, #004d80, #002844);
+    -webkit-background-clip: text;
     background-size: 200%;
-    background-position: left;
     animation: gradientShift 2s infinite alternate;
 }
 
