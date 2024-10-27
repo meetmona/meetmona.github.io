@@ -1,37 +1,96 @@
-<script>
-    function enterSite() {
-        const landing = document.querySelector(".landing");
-        landing.classList.add("portal-transition");
-        setTimeout(() => {
-            landing.style.display = "none";
-            const mainContent = document.getElementById("main-content");
-            mainContent.classList.remove("hidden");
-            startTyping();
-        }, 1000);
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page with Centered Title and Enter Button -->
+    <div class="landing">
+        <h1 class="main-title">Mona AI</h1>
+        <button class="enter-button" onclick="enterSite()">Enter</button>
+    </div>
 
-    // Typing Animation Script
-    const text = "Mona AI is an advanced language model crafted for delivering personalized insights. By adapting to unique archetypes, Mona offers users guidance that aligns with their distinct goals, perspectives, and aspirations.";
-    let index = 0;
+    <!-- Main Content Section, Initially Hidden -->
+    <div id="main-content" class="hidden">
+        <section id="about">
+            <!-- Typing Text Container -->
+            <p id="typing-text" class="typing-text"></p>
+        </section>
+        
+        <!-- Archetype Section with Icons and Descriptions (Initially Hidden) -->
+        <section id="features" class="hidden-elements fade-in">
+            <div class="feature">
+                <h3 class="archetype-title">Sage</h3>
+                <img src="assets/sage_icon.png" alt="Sage Icon" class="archetype-icon">
+                <p class="archetype-description">Wisdom-driven insights offering depth and perspective.</p>
+                <button class="locked-button" disabled>🔒 Unlock your Archetype... (Coming Soon)</button>
+            </div>
+            <div class="feature">
+                <h3 class="archetype-title">Trickster</h3>
+                <img src="assets/trickster_icon.png" alt="Trickster Icon" class="archetype-icon">
+                <p class="archetype-description">Playful and curious, revealing the unexpected.</p>
+                <button class="locked-button" disabled>🔒 Unlock your Archetype... (Coming Soon)</button>
+            </div>
+            <div class="feature">
+                <h3 class="archetype-title">Dreamer</h3>
+                <img src="assets/dreamer_icon.png" alt="Dreamer Icon" class="archetype-icon">
+                <p class="archetype-description">Inspirational and hopeful, seeing possibilities ahead.</p>
+                <button class="locked-button" disabled>🔒 Unlock your Archetype... (Coming Soon)</button>
+            </div>
+            <div class="feature">
+                <h3 class="archetype-title">Visionary</h3>
+                <img src="assets/visionary_icon.png" alt="Visionary Icon" class="archetype-icon">
+                <p class="archetype-description">Strategic and focused, offering high-level guidance.</p>
+                <button class="locked-button" disabled>🔒 Unlock your Archetype... (Coming Soon)</button>
+            </div>
+        </section>
+        
+        <!-- Footer Section with "Read the Whitepaper" Link (Initially Hidden) -->
+        <footer class="hidden-elements fade-in">
+            <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a> | Read the <a href="assets/Mona_LLM_Whitepaper.pdf" target="_blank">Whitepaper</a></p>
+        </footer>
+    </div>
 
-    function startTyping() {
-        const typingTextElement = document.getElementById("typing-text");
-        const speed = 50;
-
-        function typeWriter() {
-            if (index < text.length) {
-                typingTextElement.innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeWriter, speed);
-            } else {
-                // Add fade-in effect to archetypes and footer after typing completes
-                document.querySelectorAll(".hidden-elements").forEach(el => {
-                    el.classList.remove("hidden-elements");
-                    el.classList.add("fade-in");
-                });
-            }
+    <!-- JavaScript for Typing Animation and Transition Effect -->
+    <script>
+        function enterSite() {
+            const landing = document.querySelector(".landing");
+            landing.classList.add("portal-transition");
+            setTimeout(() => {
+                landing.style.display = "none";
+                const mainContent = document.getElementById("main-content");
+                mainContent.classList.remove("hidden");
+                startTyping();
+            }, 1000);
         }
 
-        typeWriter();
-    }
-</script>
+        // Typing Animation Script
+        const text = "Mona AI is an advanced language model crafted for delivering personalized insights. By adapting to unique archetypes, Mona offers users guidance that aligns with their distinct goals, perspectives, and aspirations.";
+        let index = 0;
+
+        function startTyping() {
+            const typingTextElement = document.getElementById("typing-text");
+            const speed = 50;
+
+            function typeWriter() {
+                if (index < text.length) {
+                    typingTextElement.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    // Add fade-in effect to archetypes and footer after typing completes
+                    document.querySelectorAll(".hidden-elements").forEach(el => {
+                        el.classList.remove("hidden-elements");
+                        el.classList.add("fade-in");
+                    });
+                }
+            }
+
+            typeWriter();
+        }
+    </script>
+</body>
+</html>
