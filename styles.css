@@ -40,9 +40,9 @@ body {
 .typing-text {
     font-size: 1.2em;
     color: #ddd;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 20px auto;
-    font-family: 'Georgia', serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 600;
     text-align: center;
     letter-spacing: 0.5px;
@@ -85,12 +85,7 @@ footer a:hover {
 }
 
 .locked-button:hover {
-    content: "🔒"; /* Display lock symbol on hover */
+    content: "🔒";
     color: #00a3cc;
     text-decoration: none;
-}
-
-/* Footer */
-footer p {
-    color: #666;
 }
