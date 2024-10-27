@@ -101,20 +101,84 @@ body {
 #main-content {
     padding: 40px;
     text-align: center;
+    font-family: 'Georgia', serif; /* Font for the second page */
+}
+
+/* Smaller Single-Line Introductory Text Styling */
+.intro-text {
+    font-size: 1em;
+    color: #ddd;
+    max-width: 1200px;
+    margin: 20px auto 40px;
     font-family: 'Georgia', serif;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+    background: linear-gradient(45deg, #00bfff, #004d80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(0, 191, 255, 0.4);
 }
 
-/* Footer Styling */
-footer p {
-    color: #666;
-}
-
-footer a {
+/* Archetypes Title Styling */
+.archetypes-title {
+    font-size: 3em;
     color: #00bfff;
-    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
 }
 
-footer a:hover {
-    color: #008cba;
+/* Archetype Section Styling */
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
+
+.archetype-icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+/* Updated Font for Individual Archetype Titles */
+.archetype-title {
+    font-size: 1.6em;
+    color: #00bfff;
+    margin-bottom: 8px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.feature {
+    background-color: #222;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Locked Button Styling */
+.locked-button {
+    background-color: #333;
+    color: #00bfff;
+    padding: 8px 20px
