@@ -40,7 +40,7 @@ body {
 .fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
-    animation-delay: 0.5s; /* Slight delay to ensure smooth reveal */
+    animation-delay: 0.5s;
 }
 
 @keyframes fadeIn {
@@ -178,12 +178,12 @@ body {
 }
 
 /* Footer */
-.footer a {
+footer a {
     color: #00c3ff;
     text-decoration: none;
     font-weight: bold;
 }
 
-.footer a:hover {
+footer a:hover {
     color: #00a3cc;
 }
