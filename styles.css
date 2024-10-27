@@ -84,8 +84,7 @@ body {
     font-family: 'Georgia', serif;
 }
 
-/* Typing Text Style */
-/* Introductory Text with Hover Gradient Animation */
+
 .typing-text {
     font-size: 1.2em;
     max-width: 800px;
@@ -95,26 +94,16 @@ body {
     text-align: center;
     letter-spacing: 0.5px;
     line-height: 1.5;
-    background: linear-gradient(45deg, #00bfff, #004d80);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: background 0.5s ease;
+    color: #ddd;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 .typing-text:hover {
-    background: linear-gradient(90deg, #00ffb0, #00bfff, #004d80, #002844);
+    color: transparent;
+    background: radial-gradient(circle at var(--x) var(--y), #00bfff, #004d80, transparent 60%);
     -webkit-background-clip: text;
-    background-size: 200%;
-    animation: gradientShift 2s infinite alternate;
-}
-
-@keyframes gradientShift {
-    0% {
-        background-position: left;
-    }
-    100% {
-        background-position: right;
-    }
+    background-clip: text;
 }
 
 /* Hidden Elements */
