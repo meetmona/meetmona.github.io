@@ -15,16 +15,12 @@
 
     <!-- Main Content Section, Initially Hidden -->
     <div id="main-content" class="hidden">
-        <section id="image-section" class="hidden-elements">
-            <img src="assets/mona_image.webp" alt="Mona AI" class="mona-image">
-        </section>
-        
         <section id="about">
             <!-- Typing Text Container -->
             <p id="typing-text" class="typing-text"></p>
         </section>
         
-        <!-- Archetype Section with Icons and Descriptions -->
+        <!-- Archetype Section with Icons and Descriptions (Initially Hidden) -->
         <section id="features" class="hidden-elements">
             <div class="feature">
                 <h3 class="archetype-title">Sage</h3>
@@ -32,10 +28,27 @@
                 <p class="archetype-description">Wisdom-driven insights offering depth and perspective.</p>
                 <button class="locked-button" disabled>Unlock Your Archetype (Coming Soon)</button>
             </div>
-            <!-- Additional Archetypes -->
+            <div class="feature">
+                <h3 class="archetype-title">Trickster</h3>
+                <img src="assets/trickster_icon.png" alt="Trickster Icon" class="archetype-icon">
+                <p class="archetype-description">Playful and curious, revealing the unexpected.</p>
+                <button class="locked-button" disabled>Unlock Your Archetype (Coming Soon)</button>
+            </div>
+            <div class="feature">
+                <h3 class="archetype-title">Dreamer</h3>
+                <img src="assets/dreamer_icon.png" alt="Dreamer Icon" class="archetype-icon">
+                <p class="archetype-description">Inspirational and hopeful, seeing possibilities ahead.</p>
+                <button class="locked-button" disabled>Unlock Your Archetype (Coming Soon)</button>
+            </div>
+            <div class="feature">
+                <h3 class="archetype-title">Visionary</h3>
+                <img src="assets/visionary_icon.png" alt="Visionary Icon" class="archetype-icon">
+                <p class="archetype-description">Strategic and focused, offering high-level guidance.</p>
+                <button class="locked-button" disabled>Unlock Your Archetype (Coming Soon)</button>
+            </div>
         </section>
         
-        <!-- Footer Section -->
+        <!-- Footer Section with "Read the Whitepaper" Link (Initially Hidden) -->
         <footer class="hidden-elements">
             <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a> | Read the <a href="assets/Mona_LLM_Whitepaper.pdf" target="_blank">Whitepaper</a></p>
         </footer>
@@ -50,12 +63,7 @@
                 landing.style.display = "none";
                 const mainContent = document.getElementById("main-content");
                 mainContent.classList.remove("hidden");
-
-                // Start typing animation
                 startTyping();
-
-                // Display the Mona image with fade-in effect
-                document.querySelector(".mona-image").classList.add("fade-in");
             }, 1000);
         }
 
