@@ -14,12 +14,12 @@
     </div>
 
     <!-- Main Content Section, Initially Hidden -->
-    <div id="main-content" class="content hidden">
+    <div id="main-content" class="hidden">
         <section id="about">
             <!-- Typing Text Container -->
             <p id="typing-text" class="typing-text"></p>
         </section>
-
+        
         <!-- Archetype Section with Icons and Descriptions (Initially Hidden) -->
         <section id="features" class="hidden-elements">
             <div class="feature">
@@ -57,9 +57,14 @@
     <!-- JavaScript for Typing Animation and Transition Effect -->
     <script>
         function enterSite() {
-            document.querySelector(".landing").style.display = "none";
-            document.getElementById("main-content").classList.remove("hidden");
-            startTyping();
+            const landing = document.querySelector(".landing");
+            landing.classList.add("portal-transition");
+            setTimeout(() => {
+                landing.style.display = "none";
+                const mainContent = document.getElementById("main-content");
+                mainContent.classList.remove("hidden");
+                startTyping();
+            }, 1000);
         }
 
         // Typing Animation Script
