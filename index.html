@@ -21,7 +21,7 @@
         </section>
         
         <!-- Archetype Section with Icons and Descriptions (Initially Hidden) -->
-        <section id="features" class="hidden-elements">
+        <section id="features" class="hidden-elements fade-in">
             <div class="feature">
                 <h3 class="archetype-title">Sage</h3>
                 <img src="assets/sage_icon.png" alt="Sage Icon" class="archetype-icon">
@@ -49,7 +49,7 @@
         </section>
         
         <!-- Footer Section with "Read the Whitepaper" Link (Initially Hidden) -->
-        <footer class="hidden-elements">
+        <footer class="hidden-elements fade-in">
             <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a> | Read the <a href="assets/Mona_LLM_Whitepaper.pdf" target="_blank">Whitepaper</a></p>
         </footer>
     </div>
@@ -81,8 +81,8 @@
                     index++;
                     setTimeout(typeWriter, speed);
                 } else {
-                    // Show hidden elements after typing completes
-                    document.querySelectorAll(".hidden-elements").forEach(el => el.style.display = "block");
+                    // Show hidden elements with fade-in effect after typing completes
+                    document.querySelectorAll(".hidden-elements").forEach(el => el.classList.remove("hidden-elements"));
                 }
             }
 
