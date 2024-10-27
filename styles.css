@@ -87,7 +87,6 @@ body {
 /* Typing Text Style */
 .typing-text {
     font-size: 1.2em;
-    color: #ddd;
     max-width: 800px;
     margin: 20px auto;
     font-family: 'Roboto Slab', serif;
