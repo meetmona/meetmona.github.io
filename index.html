@@ -15,31 +15,28 @@
 
     <!-- Main Content Section, Initially Hidden -->
     <div id="main-content" class="content hidden">
-        <!-- Introductory Text and Archetypes Section -->
         <section id="about">
             <p class="intro-text">Mona AI is an advanced language model designed to deliver personalized insights based on unique archetypes.</p>
             <h2 class="archetypes-title">Archetypes</h2>
         </section>
-        <!-- Archetype Cards -->
         <section id="features">
             <!-- Archetype items go here -->
         </section>
-        <!-- Footer Section -->
         <footer>
-            <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a> | <a href="assets/Mona_LLM_Whitepaper.pdf" target="_blank">Read the Whitepaper</a></p>
+            <p>Connect with Mona on <a href="https://twitter.com/MeetMonaAI" target="_blank">Twitter</a> | View the code on <a href="https://github.com/meetmona/MonaLLM" target="_blank">GitHub</a> | <a href="assets/Mona_LLM_Whitepaper.pdf" target="_blank">Whitepaper</a></p>
         </footer>
     </div>
 
-    <!-- JavaScript to Show Main Content with Transition -->
+    <!-- JavaScript for Transition Effect -->
     <script>
         function enterSite() {
             const landing = document.querySelector(".landing");
-            landing.classList.add("portal-transition"); // Trigger portal effect
+            landing.classList.add("portal-transition");
             setTimeout(() => {
                 landing.style.display = "none";
                 document.getElementById("main-content").style.display = "block";
                 document.getElementById("main-content").classList.add("fade-in");
-            }, 1000);  // Adjust timing to match CSS animation
+            }, 1000); // Adjust timing to match CSS animation
         }
     </script>
 </body>
