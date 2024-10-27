@@ -36,19 +36,6 @@ body {
     }
 }
 
-/* Fade-in Effect for Elements */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-    animation-delay: 0.5s;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
 /* Landing Page */
 .landing {
     text-align: center;
@@ -124,25 +111,84 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 40px;
 }
 
 .archetype-icon {
     width: 80px;
     height: 80px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-.archetype-title, .archetype-description {
-    font-size: 1.5em;
-    color: #00c3ff;
-    font-family: 'Montserrat', sans-serif;
+.archetype-title {
+    font-size: 1.4em;
+    color: #00e6e6;
+    font-family: 'Merriweather', serif;
     font-weight: 700;
-    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.archetype-description {
+    font-size: 0.95em;
+    color: #c0c0c0;
+    font-family: 'Merriweather', serif;
+    margin-top: 5px;
+    padding: 0 10px;
+    line-height: 1.4;
 }
 
 .feature {
     background-color: #222;
-    border-radius: 15px;
-    padding: 20This update should ensure that both the archetypes and footer sections fade in simultaneously after the typing animation is complete. Let me know if this configuration now fully matches your expectations, or if additional tweaks are needed!
+    border-radius: 12px;
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 191, 255, 0.3);
+}
+
+/* Locked Button */
+.locked-button {
+    background-color: #333;
+    color: #00bfff;
+    padding: 8px 20px;
+    font-size: 0.9em;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    border: 1px solid #00bfff;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: not-allowed;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 6px rgba(0, 191, 255, 0.3);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.locked-button:hover {
+    background-color: #00bfff;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
+
+footer a {
+    color: #00c3ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+footer a:hover {
+    color: #00a3cc;
+}
